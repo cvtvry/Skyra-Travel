@@ -1,28 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hoteles | SKYRA</title>
-<link rel="stylesheet" href="estilo.css">
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SKYRA | Reservas</title>
+
+  <link rel="stylesheet" href="estilo.css">
+
 </head>
+
 <body>
 
-<section class="reserva">
+<header class="navbar">
 
-<div class="titulo">
-<h2>Reserva de Hoteles</h2>
-</div>
+  <div class="logo">
+    SKYRA
+  </div>
 
-<form>
-<input type="text" placeholder="Nombre">
-<input type="email" placeholder="Correo">
-<input type="date">
-<button>Reservar Hotel</button>
-</form>
+  <nav>
+
+    <a href="índice.html">Inicio</a>
+
+    <a href="Destinos.html">Destinos</a>
+
+    <a href="Tours.Packages.html">Tours</a>
+
+    <a href="Hotel.reservas.html" class="activo">Reservas</a>
+
+    <a href="Acerca de nosotros.html">Nosotros</a>
+
+  </nav>
+
+</header>
+
+<section class="banner">
+
+  <h1>Reserva tu Hotel</h1>
 
 </section>
 
+<section class="formulario">
+
+  <form>
+
+    <input type="text" placeholder="Nombre completo">
+
+    <input type="email" placeholder="Correo electrónico">
+
+    <select>
+
+      <option>Selecciona un destino</option>
+
+      <option>Noruega</option>
+
+      <option>Escocia</option>
+
+      <option>Irlanda</option>
+
+      <option>Dinamarca</option>
+
+    </select>
+
+    <input type="date">
+
+    <button type="submit">
+      Solicitar reserva
+    </button>
+
+  </form>
+
+</section>
+
+<footer>
+
+  <h3>SKYRA</h3>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
-
