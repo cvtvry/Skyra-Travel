@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKYRA | Travel Beyond Legends</title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>SKYRA</title>
-
-  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="estilo.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
   <header>
@@ -26,23 +20,27 @@
       SKYRA
     </div>
 
-    <nav>
-
+    <nav id="menu">
       <a href="índice.html">Inicio</a>
-
       <a href="Acerca de nosotros.html">Sobre Nosotros</a>
-
       <a href="Destinos.html">Destinos</a>
-
       <a href="Tours.Packages.html">Tours</a>
-
       <a href="Hotel.reservas.html">Hoteles</a>
-
     </nav>
+
+    <div class="menu-mobile" id="menu-mobile">
+      ☰
+    </div>
 
   </header>
 
   <section class="hero">
+
+    <video autoplay muted loop playsinline class="video-fondo">
+      <source src="https://cdn.coverr.co/videos/coverr-aerial-view-of-a-mountain-1560081820031?download=1080p" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
 
     <div class="contenido">
 
@@ -51,9 +49,7 @@
       </h1>
 
       <p>
-
-        Descubre Irlanda, Escocia, Noruega, Dinamarca e Inglaterra con experiencias inspiradas en dragones ancestrales y paisajes míticos.
-
+        Explora Irlanda, Escocia, Noruega, Dinamarca e Inglaterra con experiencias premium inspiradas en dragones nórdicos y magia ancestral.
       </p>
 
       <button>
@@ -64,8 +60,110 @@
 
   </section>
 
+  <section class="destinos">
+
+    <div class="titulo">
+      <h2>Destinos Legendarios</h2>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1974">
+
+        <div class="card-content">
+          <h3>Irlanda</h3>
+
+          <p>
+            Castillos ancestrales, rutas místicas y paisajes verdes inspirados en leyendas celtas.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1974">
+
+        <div class="card-content">
+          <h3>Noruega</h3>
+
+          <p>
+            Fiordos épicos, auroras boreales y aventuras premium entre montañas legendarias.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1974">
+
+        <div class="card-content">
+          <h3>Escocia</h3>
+
+          <p>
+            Highlands misteriosos, castillos medievales y experiencias cinematográficas únicas.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="ofertas">
+
+    <div class="oferta-box">
+
+      <h2>
+        Oferta Especial SKYRA
+      </h2>
+
+      <p>
+        Reserva hoy y obtén hasta 35% de descuento en tours premium por Escocia y Noruega.
+      </p>
+
+      <button>
+        Ver Ofertas
+      </button>
+
+    </div>
+
+  </section>
+
+  <section class="reserva">
+
+    <div class="titulo">
+      <h2>Reserva Tu Aventura</h2>
+    </div>
+
+    <form>
+
+      <input type="text" placeholder="Nombre completo">
+
+      <input type="email" placeholder="Correo electrónico">
+
+      <select>
+        <option>Selecciona destino</option>
+        <option>Irlanda</option>
+        <option>Escocia</option>
+        <option>Noruega</option>
+        <option>Dinamarca</option>
+        <option>Inglaterra</option>
+      </select>
+
+      <input type="date">
+
+      <button type="submit">
+        Reservar Ahora
+      </button>
+
+    </form>
+
+  </section>
+
+  <footer>
+    © 2026 SKYRA — Travel Beyond Legends
+  </footer>
+
   <script src="script.js"></script>
 
 </body>
-
 </html>
