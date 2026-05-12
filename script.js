@@ -1,1 +1,1 @@
-
+console.log("SKYRA INICIALIZADO");
