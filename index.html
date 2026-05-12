@@ -1,124 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>SKYRA</title>
+  <title>SKYRA | Agencia de Viajes</title>
 
-  <link rel="stylesheet" href="style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
 
-<header>
+  <!-- NAVBAR -->
 
-  <div class="logo">
-    SKYRA
-  </div>
+  <header class="navbar">
 
-  <nav>
+    <div class="logo">
+      SKYRA
+    </div>
 
-    <a href="index.html">Inicio</a>
+    <nav>
 
-    <a href="about.html">Sobre Nosotros</a>
+      <a href="índice.html" class="activo">Inicio</a>
 
-    <a href="destinations.html">Destinos</a>
+      <a href="Destinos.html">Destinos</a>
 
-    <a href="tours.html">Tours</a>
+      <a href="Tours.Packages.html">Tours y Paquetes</a>
 
-    <a href="hotels.html">Hoteles</a>
+      <a href="Hotel.reservas.html">Reservas</a>
 
-  </nav>
+      <a href="Acerca de nosotros.html">Nosotros</a>
 
-</header>
+    </nav>
 
-<section class="hero">
+  </header>
 
-  <div class="overlay"></div>
+  <!-- HERO -->
 
-  <div class="hero-content">
+  <section class="hero">
 
-    <h1>
-      Viaja Más Allá de las Leyendas
-    </h1>
+    <div class="overlay"></div>
+
+    <div class="contenido-hero">
+
+      <h1>
+        Explora Europa Legendaria
+      </h1>
+
+      <p>
+        Viajes inspirados en dragones nórdicos,
+        castillos antiguos y paisajes mágicos
+        de Dinamarca, Noruega, Escocia,
+        Irlanda e Inglaterra.
+      </p>
+
+      <a href="Destinos.html" class="boton">
+        Descubrir destinos
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- SECCIÓN -->
+
+  <section class="info">
+
+    <div class="caja">
+
+      <h2>Experiencias Premium</h2>
+
+      <p>
+        Vive aventuras sofisticadas entre
+        fiordos, castillos y leyendas vikingas.
+      </p>
+
+    </div>
+
+    <div class="caja">
+
+      <h2>Inspiración Dragón</h2>
+
+      <p>
+        Diseño elegante inspirado en las alas,
+        escamas y símbolos nórdicos.
+      </p>
+
+    </div>
+
+    <div class="caja">
+
+      <h2>Viajes Únicos</h2>
+
+      <p>
+        Creamos rutas exclusivas y personalizadas
+        para viajeros modernos.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- DESTINOS -->
+
+  <section class="destacados">
+
+    <h2>Destinos Destacados</h2>
+
+    <div class="contenedor-cards">
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1400&auto=format&fit=crop">
+
+        <div class="texto-card">
+
+          <h3>Dinamarca</h3>
+
+          <p>
+            Castillos, diseño nórdico
+            y cultura vikinga.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1400&auto=format&fit=crop">
+
+        <div class="texto-card">
+
+          <h3>Noruega</h3>
+
+          <p>
+            Fiordos legendarios
+            y auroras boreales.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?q=80&w=1400&auto=format&fit=crop">
+
+        <div class="texto-card">
+
+          <h3>Escocia</h3>
+
+          <p>
+            Castillos medievales
+            y paisajes épicos.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <h3>SKYRA</h3>
 
     <p>
-      Descubre Irlanda, Escocia, Noruega, Dinamarca e Inglaterra con experiencias premium inspiradas en dragones nórdicos.
+      Agencia de viajes inspirada en dragones y leyendas europeas.
     </p>
 
-    <button>
-      Explorar Destinos
-    </button>
+  </footer>
 
-  </div>
-
-</section>
-
-<section class="destinations">
-
-  <h2>
-    Destinos Legendarios
-  </h2>
-
-  <div class="cards">
-
-    <div class="card">
-
-      <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1974">
-
-      <h3>Irlanda</h3>
-
-      <p>
-        Castillos ancestrales y magia celta.
-      </p>
-
-    </div>
-
-    <div class="card">
-
-      <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1974">
-
-      <h3>Escocia</h3>
-
-      <p>
-        Highlands y fortalezas medievales.
-      </p>
-
-    </div>
-
-    <div class="card">
-
-      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1974">
-
-      <h3>Noruega</h3>
-
-      <p>
-        Fiordos épicos y auroras boreales.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<footer>
-
-  © 2026 SKYRA — Travel Beyond Legends
-
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
-
 </html>
