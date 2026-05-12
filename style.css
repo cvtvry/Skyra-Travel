@@ -12,7 +12,11 @@ body{
 
   color:white;
 
+  overflow-x:hidden;
+
 }
+
+/* ===== NAVBAR ===== */
 
 header{
 
@@ -22,6 +26,8 @@ header{
 
   top:0;
 
+  left:0;
+
   display:flex;
 
   justify-content:space-between;
@@ -30,9 +36,11 @@ header{
 
   padding:25px 60px;
 
-  background:rgba(0,0,0,0.4);
+  background:rgba(0,0,0,0.3);
 
-  backdrop-filter:blur(10px);
+  backdrop-filter:blur(12px);
+
+  border-bottom:1px solid rgba(255,255,255,0.1);
 
   z-index:1000;
 
@@ -40,15 +48,17 @@ header{
 
 .logo{
 
-  font-size:2rem;
+  font-size:2.3rem;
 
   font-family:'Cinzel', serif;
 
   color:#d4af37;
 
-  letter-spacing:5px;
+  letter-spacing:6px;
 
   font-weight:700;
+
+  text-shadow:0 0 15px rgba(212,175,55,0.5);
 
 }
 
@@ -66,7 +76,37 @@ nav a{
 
   color:white;
 
+  font-weight:500;
+
+  position:relative;
+
   transition:0.3s;
+
+}
+
+nav a::after{
+
+  content:"";
+
+  position:absolute;
+
+  width:0%;
+
+  height:2px;
+
+  background:#d4af37;
+
+  left:0;
+
+  bottom:-5px;
+
+  transition:0.3s;
+
+}
+
+nav a:hover::after{
+
+  width:100%;
 
 }
 
@@ -76,13 +116,19 @@ nav a:hover{
 
 }
 
+/* ===== HERO ===== */
+
 .hero{
 
   height:100vh;
 
+  position:relative;
+
+  overflow:hidden;
+
   background-image:
-  linear-gradient(rgba(0,0,0,0.5),
-  rgba(0,0,0,0.8)),
+  linear-gradient(rgba(0,0,0,0.45),
+  rgba(0,0,0,0.85)),
 
   url('https://images.unsplash.com/photo-1518655048521-f130df041f66?q=80&w=2070');
 
@@ -102,21 +148,89 @@ nav a:hover{
 
 }
 
+/* EFECTO DE LUZ */
+
+.hero::before{
+
+  content:"";
+
+  position:absolute;
+
+  width:700px;
+
+  height:700px;
+
+  background:radial-gradient(circle,
+  rgba(212,175,55,0.15),
+  transparent 70%);
+
+  top:-200px;
+
+  right:-100px;
+
+  animation:floatLight 8s ease-in-out infinite;
+
+}
+
+@keyframes floatLight{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(30px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+
+}
+
 .contenido{
 
-  max-width:850px;
+  max-width:900px;
+
+  position:relative;
+
+  z-index:5;
+
+  animation:fadeUp 1.5s ease;
+
+}
+
+@keyframes fadeUp{
+
+  from{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:translateY(0px);
+
+  }
 
 }
 
 .contenido h1{
 
-  font-size:5rem;
+  font-size:6rem;
 
   font-family:'Cinzel', serif;
 
-  margin-bottom:20px;
+  margin-bottom:25px;
 
   line-height:1.1;
+
+  text-shadow:0 0 25px rgba(0,0,0,0.6);
 
 }
 
@@ -124,39 +238,161 @@ nav a:hover{
 
   font-size:1.3rem;
 
-  line-height:1.8;
+  line-height:1.9;
 
-  margin-bottom:40px;
+  margin-bottom:45px;
 
   color:#d6d6d6;
 
 }
 
+/* ===== BOTÓN ===== */
+
 button{
 
-  padding:18px 40px;
+  padding:18px 45px;
 
   border:none;
 
-  background:#d4af37;
+  border-radius:60px;
+
+  background:linear-gradient(
+  135deg,
+  #d4af37,
+  #f3d36b
+  );
 
   color:black;
 
   font-weight:700;
 
-  border-radius:50px;
+  font-size:1rem;
 
   cursor:pointer;
 
-  transition:0.3s;
+  transition:0.4s;
+
+  box-shadow:0 0 20px rgba(212,175,55,0.4);
 
 }
 
 button:hover{
 
-  transform:scale(1.05);
+  transform:translateY(-5px) scale(1.03);
+
+  box-shadow:0 0 30px rgba(212,175,55,0.7);
 
 }
+
+/* ===== DESTINOS ===== */
+
+.destinos{
+
+  padding:120px 8%;
+
+  background:#07111f;
+
+}
+
+.titulo{
+
+  text-align:center;
+
+  margin-bottom:70px;
+
+}
+
+.titulo h2{
+
+  font-size:3rem;
+
+  font-family:'Cinzel', serif;
+
+  color:#d4af37;
+
+}
+
+.cards{
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+  gap:30px;
+
+}
+
+.card{
+
+  background:#0d1b2a;
+
+  border-radius:25px;
+
+  overflow:hidden;
+
+  transition:0.4s;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+}
+
+.card:hover{
+
+  transform:translateY(-10px);
+
+  box-shadow:0 15px 40px rgba(0,0,0,0.5);
+
+}
+
+.card img{
+
+  width:100%;
+
+  height:320px;
+
+  object-fit:cover;
+
+}
+
+.card-content{
+
+  padding:25px;
+
+}
+
+.card-content h3{
+
+  margin-bottom:15px;
+
+  color:#d4af37;
+
+  font-size:1.5rem;
+
+}
+
+.card-content p{
+
+  color:#c9c9c9;
+
+  line-height:1.7;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+
+  padding:40px;
+
+  text-align:center;
+
+  background:#030712;
+
+  color:#8f8f8f;
+
+}
+
+/* ===== RESPONSIVE ===== */
 
 @media(max-width:900px){
 
@@ -165,6 +401,8 @@ button:hover{
     flex-direction:column;
 
     gap:20px;
+
+    padding:20px;
 
   }
 
@@ -178,7 +416,13 @@ button:hover{
 
   .contenido h1{
 
-    font-size:3rem;
+    font-size:3.5rem;
+
+  }
+
+  .contenido p{
+
+    font-size:1rem;
 
   }
 
