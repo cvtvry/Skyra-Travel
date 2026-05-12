@@ -1,23 +1,9 @@
-console.log("SKYRA INITIALIZED");
+// EFECTO SIMPLE DE NAVBAR
 
-const mobileButton = document.getElementById("menu-mobile");
-const menu = document.getElementById("menu");
+window.addEventListener("scroll", function(){
 
-mobileButton.addEventListener("click", ()=>{
+  const navbar = document.querySelector(".navbar");
 
-  menu.classList.toggle("active");
-
-});
-
-window.addEventListener("scroll", ()=>{
-
-  const header = document.querySelector("header");
-
-  if(window.scrollY > 50){
-    header.style.background = "rgba(0,0,0,0.7)";
-  }
-  else{
-    header.style.background = "rgba(0,0,0,0.3)";
-  }
+  navbar.classList.toggle("scroll", window.scrollY > 50);
 
 });
