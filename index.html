@@ -1,182 +1,154 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKÝRA</title>
 
-  <title>SKYRA | Agencia de Viajes</title>
+    <link rel="stylesheet" href="css/style.css">
 
-  <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a2e0e6ad65.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
 
-  <!-- NAVBAR -->
+<div class="background-overlay"></div>
 
-  <header class="navbar">
+<header>
 
-    <div class="logo">
-      SKYRA
+    <div class="logo-section">
+
+        <button id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <h1>SKÝRA</h1>
+
     </div>
 
-    <nav>
+    <nav id="nav-menu">
 
-      <a href="índice.html" class="activo">Inicio</a>
-
-      <a href="Destinos.html">Destinos</a>
-
-      <a href="Tours.Packages.html">Tours y Paquetes</a>
-
-      <a href="Hotel.reservas.html">Reservas</a>
-
-      <a href="Acerca de nosotros.html">Nosotros</a>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About Us</a>
 
     </nav>
 
-  </header>
+    <div class="search-section">
 
-  <!-- HERO -->
+        <input type="text" placeholder="SEARCH">
 
-  <section class="hero">
+        <i class="fa-solid fa-magnifying-glass"></i>
 
-    <div class="overlay"></div>
-
-    <div class="contenido-hero">
-
-      <h1>
-        Explora Europa Legendaria
-      </h1>
-
-      <p>
-        Viajes inspirados en dragones nórdicos,
-        castillos antiguos y paisajes mágicos
-        de Dinamarca, Noruega, Escocia,
-        Irlanda e Inglaterra.
-      </p>
-
-      <a href="Destinos.html" class="boton">
-        Descubrir destinos
-      </a>
+        <i class="fa-regular fa-circle-user"></i>
 
     </div>
 
-  </section>
+</header>
 
-  <!-- SECCIÓN -->
+<main>
 
-  <section class="info">
+    <section class="left-card">
 
-    <div class="caja">
+        <img src="assets/dragon-eggs.jpg" alt="Dragon Eggs">
 
-      <h2>Experiencias Premium</h2>
+        <div class="card-text">
 
-      <p>
-        Vive aventuras sofisticadas entre
-        fiordos, castillos y leyendas vikingas.
-      </p>
+            <h2>Casual Bloom</h2>
 
-    </div>
-
-    <div class="caja">
-
-      <h2>Inspiración Dragón</h2>
-
-      <p>
-        Diseño elegante inspirado en las alas,
-        escamas y símbolos nórdicos.
-      </p>
-
-    </div>
-
-    <div class="caja">
-
-      <h2>Viajes Únicos</h2>
-
-      <p>
-        Creamos rutas exclusivas y personalizadas
-        para viajeros modernos.
-      </p>
-
-    </div>
-
-  </section>
-
-  <!-- DESTINOS -->
-
-  <section class="destacados">
-
-    <h2>Destinos Destacados</h2>
-
-    <div class="contenedor-cards">
-
-      <div class="card">
-
-        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1400&auto=format&fit=crop">
-
-        <div class="texto-card">
-
-          <h3>Dinamarca</h3>
-
-          <p>
-            Castillos, diseño nórdico
-            y cultura vikinga.
-          </p>
+            <p>
+                A dreamy blend of flowy fabric,
+                muted tones, and delicate textures—
+                perfect for days when comfort
+                meets elegance.
+            </p>
 
         </div>
 
-      </div>
+    </section>
 
-      <div class="card">
+    <section class="hero-text">
 
-        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1400&auto=format&fit=crop">
+        <h1>Live the Legends</h1>
 
-        <div class="texto-card">
+        <div class="buttons">
 
-          <h3>Noruega</h3>
+            <button onclick="window.location.href='packages.html'">
+                PACKAGES
+            </button>
 
-          <p>
-            Fiordos legendarios
-            y auroras boreales.
-          </p>
+            <button class="reservation-btn"
+                onclick="window.location.href='reservation.html'">
+                RESERVATION
+            </button>
 
-        </div>
-
-      </div>
-
-      <div class="card">
-
-        <img src="https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?q=80&w=1400&auto=format&fit=crop">
-
-        <div class="texto-card">
-
-          <h3>Escocia</h3>
-
-          <p>
-            Castillos medievales
-            y paisajes épicos.
-          </p>
+            <button onclick="window.location.href='offers.html'">
+                SPECIAL OFFERS
+            </button>
 
         </div>
 
-      </div>
+    </section>
+
+    <section class="description">
+
+        <p>
+            A gentle blend of earth tones,
+            rich textures and natural movement
+            grounded, yet full of life.
+        </p>
+
+    </section>
+
+</main>
+
+<section class="destinations">
+
+    <div class="destination-card">
+
+        <img src="assets/scotland.jpg" alt="Scotland">
+
+        <h3>Scotland</h3>
+
+        <p>★★★★★ (922)</p>
+
+        <button onclick="window.location.href='packages.html'">
+            see more
+        </button>
 
     </div>
 
-  </section>
+    <div class="destination-card">
 
-  <!-- FOOTER -->
+        <img src="assets/ireland.jpg" alt="Ireland">
 
-  <footer>
+        <h3>Ireland</h3>
 
-    <h3>SKYRA</h3>
+        <p>★★★★★ (872)</p>
 
-    <p>
-      Agencia de viajes inspirada en dragones y leyendas europeas.
-    </p>
+        <button onclick="window.location.href='packages.html'">
+            see more
+        </button>
 
-  </footer>
+    </div>
 
-  <script src="script.js"></script>
+    <div class="destination-card">
+
+        <img src="assets/norway.jpg" alt="Norway">
+
+        <h3>★★★★★ (729)</h3>
+
+        <button onclick="window.location.href='packages.html'">
+            see more
+        </button>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
