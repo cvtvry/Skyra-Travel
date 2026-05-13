@@ -1,9 +1,8 @@
-// EFECTO SIMPLE DE NAVBAR
+const menuBtn = document.getElementById("menu-btn");
+const navMenu = document.getElementById("nav-menu");
 
-window.addEventListener("scroll", function(){
+menuBtn.addEventListener("click", () => {
 
-  const navbar = document.querySelector(".navbar");
-
-  navbar.classList.toggle("scroll", window.scrollY > 50);
+    navMenu.classList.toggle("active");
 
 });
